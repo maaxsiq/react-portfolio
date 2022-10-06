@@ -8,11 +8,11 @@
         "x_title": "Hello, I'm",
         "job1": "JavaScript",
         "job2": "Full-Stack Developer",
-        "description": "Hello! I'm Max! Full-stack JavaScript software developer, working for about 8 years with development. Technologies/Frameworks: ReactJS, ReactNative, TypeScript, NodeJS, AWS.",
+        "description": "Hello! I'm Max! Full-stacksss JavaScript software developer, working for about 8 years with development. Technologies/Frameworks: ReactJS, ReactNative, TypeScript, NodeJS, AWS.",
         "summary": "based in Itajubá, Minas Gerais.",
         "url": "https://taniyow.vercel.app/",
         "location": {
-            "address": "XX XXXXXstreet",
+            "address": "Morro Chic",
             "postalCode": "37500-124",
             "city": "Itajubá",
             "country": "Minas Gerais",
@@ -49,6 +49,12 @@
                 "username": "Maxwell Siqueira#1856",
                 "url": "https://discord.com",
                 "x_icon": "fab fa-discord"
+            },
+            {
+                "network": "Whatsapp",
+                "username": "Maxwell Siqueira",
+                "url": "https://wa.me/+5535997330160",
+                "x_icon": "fab fa-whatsapp"
             }
         ]
     },

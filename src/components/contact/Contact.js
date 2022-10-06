@@ -59,41 +59,7 @@ export const Contact = () => {
         <Container component="main" className={classes.main} maxWidth="md">
           <div className="contact">
             <div className="_form_wrapper">
-              <form ref={form} onSubmit={sendEmail} className={classes.form}>
-                <TextField
-                  id="outlined-name-input"
-                  label="Name"
-                  type="text"
-                  size="small"
-                  variant="filled"
-                  name="name"
-                  className={classes.formfield}
-                />
-                <TextField
-                  id="outlined-password-input"
-                  label="Email"
-                  type="email"
-                  size="small"
-                  variant="filled"
-                  name="email"
-                  className={classes.formfield}
-                />
-                <TextField
-                  id="outlined-password-input"
-                  label="Message"
-                  type="textarea"
-                  size="small"
-                  multiline
-                  minRows={5}
-                  variant="filled"
-                  name="message"
-                  className={classes.formfield}
-                />
-                <button type="submit" value="Send" className="submit-btn">
-                <i className="fas fa-terminal"></i>
-                  <Typography component='span'> Send Message</Typography>
-                </button>
-              </form>
+              
             </div>
             <h1 className="contact_msg">
               <TextDecrypt text={greetings}/>

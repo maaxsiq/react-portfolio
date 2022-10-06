@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I'm ${FirstName} ${LastName}, Full-stack JavaScript software developer, working for about 8 years with development. Technologies/Frameworks: ReactJS, ReactNative, TypeScript, NodeJS, AWS.`;
+  const english = "English level: Intermediary";
+  const aboutme = `I'm ${FirstName} ${LastName}, Full-stack JavaScript software developer, working for about 8 years with development. Technologies/Frameworks: ReactJS, ReactNative, TypeScript, NodeJS, AWS, Firebase, Jest, Cognito, Amplify, REST API, GraphQL, geographic information systems (Sig/Geo), relational databases (PostgreSQL, MySQL, etc), databases non-relational data (MongoDB, DynamoDB), Clean Architecture, SaaS, Styled Components, TDD, GitHub, GitLab, BitBucket, CI/CD Pipelines (Git Hub Actions, Jenkins, etc), knowledge of the scrum method and its ceremonies.`;
 
   return (
     <section id="about">
@@ -42,10 +43,7 @@ export const About = () => {
             <p className="aboutme">
               {aboutme}
             </p>
-            <a href="#contact" className="contact-btn">
-              <i className="fas fa-terminal"></i>
-              <Typography component='span'> Send me a message.</Typography>
-            </a>
+            <TextDecrypt text={`${english}`} />
           </div>
         </div>
       </Container>

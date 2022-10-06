@@ -27,45 +27,106 @@ export const Works = () => {
   const [projects, setProjects] = useState([
     { 
       id: 1,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
-      alter: 'React Portfolio',
+      title: 'Invillia - Mid Front-end Developer', 
+      description: `Frontend Developer TypeScript + ReactJS, using the technologies: GraphQL, Rollbar, Rest API, DataDog, Firebase, Twilio, GitHub Actions, CI/CD, TDD, Unit Tests, Design Pattern, CleanCode Archtechture, Styled Components, AWS systems..`,
+      alter: 'Invillia Technologies',
       image: `${Portfolio}`,
     },
     { 
       id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
-      alter: 'VeriTru Project',
+      title: 'B.blend - Mobile Developer (Freelancer)', 
+      description: `Development and maintenance of mobile application for partner
+      company Brastemp, development of screens with UX,
+      communications with APIs and creation/control of system logic,
+      using the technologies: Rest API, Firebase, Design Pattern,
+      CleanCode Archtechture, Styled Components.
+      `,
+      alter: 'B.blend Technologies',
       image: `${Veritru}`,
     },
     { 
       id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
-      alter: 'LoFo Project',
+      title: 'Tazzi - Technical lead and Full-stack Developer', 
+      description: `Development of web and mobile application with React Native for
+      fleet management (Uber clone), admin panel with ReactJS +
+      TypeScript, maintenance of technologies and databases with
+      MongoDB and PostgreSQL.
+      `,
+      alter: 'Tazzi Technologies',
       image: `${Lofo}`,
     },
     { 
       id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
+      title: 'Siglo - Information System Manager', 
+      description: `Development of geographic information systems software, using
+      PostgreSQL databases, LeaftLet, React Native, ReactJS and NodeJS.
+      Management and analysis of data received from city halls, creation
+      of databases relational/geographic, creating and maintaining AWS
+      servers, and managing task force.
+      `,
+      alter: 'Siglo Technologies',
       image: `${Startup}`,
     },
     { 
       id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'Startup Project',
+      title: 'Monkeys -  Full-stack Developer', 
+      description: `Development and maintenance of Mobile application using React
+      Native technology and PostgreSQL database for audio book
+      application, including screens and AWS server (Amazon).
+      `,
+      image: `${Lacalle}`,
+    },
+    { 
+      id: 6,
+      title: 'Monkeys -  Full-stack Developer', 
+      description: `Development and maintenance of web and mobile application
+      (ReactJS and React Native) to control and visit properties, with
+      PostGreSQL database, managed by realtors in São Paulo.
+      `,
+      image: `${Lacalle}`,
+    },
+    { 
+      id: 7,
+      title: 'B2ML - Front-end Developer', 
+      description: `Development of local software for Petrobras subdivisions in Java for
+      electronic fuel pump control. Development of web application for
+      Petrobras subdivisions in JavaScript for user administration,
+      payments and supplies. Web application development for
+      subdivisions from Petrobras in JavaScript for financial control of
+      supplies and generation of electronic invoices.
+      `,
+      image: `${Lacalle}`,
+    },
+    { 
+      id: 8,
+      title: 'Monkeys -  CEO', 
+      description: `Company administrator Monkeys. Strength
+      management of task, technical team and application time by
+      functionality of each step projects, using Scrum as the main
+      method.
+      `,
+      image: `${Lacalle}`,
+    },
+    { 
+      id: 9,
+      title: 'PD Soluções -  IOT and Front-end Developer', 
+      description: `Embedded software development for electronic devices such as
+      luminaires via Bluetooth, printers and turnstiles with biometric
+      reader. Development of Android applications to control electronic
+      devices and information, such as gates via sms and luminaires via
+      Bluetooth.
+      `,
+      image: `${Lacalle}`,
+    },
+    { 
+      id: 10,
+      title: 'Ventrix -  Electronics Technician', 
+      description: `Maintenance of digital electrocardiographs, development of test
+      gimbals for cables, management of the technical assistance
+      environment, direct customer support via Skype and/or e-mail,
+      stock control, shipping, implementation of new software (Microsiga
+      – TOTVS), receiving and producing the devices.
+      `,
       image: `${Lacalle}`,
     },
   ]);
@@ -80,7 +141,7 @@ export const Works = () => {
             </div>
             <div className="__content_wrapper">
               <h3 className="title">
-                <TextDecrypt text={ project.id + '. ' + project.title } />
+                <TextDecrypt text={ project.title } />
               </h3>
               <p className="description">
                 { project.description }

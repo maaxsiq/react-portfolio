@@ -10,21 +10,13 @@ export const SideNavbar = () => {
   const [activeNav, setActiveNav] = useState('#');
 
   return (
-    <nav>
+    <nav style={{ marginLeft: '50px' }}>
       <a href="#" 
         onClick={() => setActiveNav('#')}
         className={activeNav === '#' ? 'active' : ''}
       >
         <Typography>
           Home
-        </Typography>
-      </a>
-      <a href="#works"
-        onClick={() => setActiveNav('#works')}
-        className={activeNav === '#works' ? 'active' : ''}
-      >
-        <Typography>
-          Projects
         </Typography>
       </a>
       <a href="#about" 
@@ -35,12 +27,12 @@ export const SideNavbar = () => {
           About
         </Typography>
       </a>
-      <a href="#contact"
-        onClick={() => setActiveNav('#contact')}
-        className={activeNav === '#contact' ? 'active' : ''}
+      <a href="#works"
+        onClick={() => setActiveNav('#works')}
+        className={activeNav === '#works' ? 'active' : ''}
       >
         <Typography>
-          Contact
+          Projects
         </Typography>
       </a>
     </nav>
