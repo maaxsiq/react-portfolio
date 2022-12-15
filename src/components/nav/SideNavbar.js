@@ -10,7 +10,7 @@ export const SideNavbar = () => {
   const [activeNav, setActiveNav] = useState('#');
 
   return (
-    <nav style={{ marginLeft: '50px' }}>
+    <nav>
       <a href="#" 
         onClick={() => setActiveNav('#')}
         className={activeNav === '#' ? 'active' : ''}
@@ -25,6 +25,14 @@ export const SideNavbar = () => {
       >
         <Typography>
           About
+        </Typography>
+      </a>
+      <a href="#framework" 
+        onClick={() => setActiveNav('#framework')}
+        className={activeNav === '#framework' ? 'active' : ''}
+      >
+        <Typography>
+          Framework
         </Typography>
       </a>
       <a href="#works"

@@ -8,7 +8,7 @@ export const ThemeProvider = ({ children }) => {
     const getInitialMode = () => {
         if (typeof localStorage === "undefined") return true;
         const isReturningUser = "dark" in localStorage;
-        const savedMode = JSON.parse(localStorage.getItem("dark"));
+        const savedMode = JSON.parse(localStorage.getItem("light"));
         const userPrefersDark = getPrefColorScheme();
         if (isReturningUser) {
             return savedMode;

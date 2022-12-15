@@ -11,6 +11,7 @@ import { SpeedDials } from '../components/speedDial/SpeedDial';
 import { SideNavbar } from '../components/nav/SideNavbar';
 import { Works } from '../components/works/Works';
 import { About } from '../components/about/About';
+import { Framework } from '../components/framework/Framework';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -40,6 +41,7 @@ export const Home = () => {
       </div>
       <SideNavbar />
       <About />
+      <Framework />
       <Works />
     </>
   );

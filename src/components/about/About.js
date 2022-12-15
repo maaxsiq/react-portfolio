@@ -25,7 +25,7 @@ export const About = () => {
 
   return (
     <section id="about">
-      <Container component="main" className={classes.main} maxWidth="md">
+      <Container component="main" className={classes.main} maxWidth="lg">
         <div className="about">
           <div className="_img"
             style={{ 
@@ -37,13 +37,11 @@ export const About = () => {
           >
           </div>
           <div className="_content_wrapper">
-            <Typography component='h2' variant="h5">
+            <Typography component='h1' variant="h3">
               <TextDecrypt text={`${greetings}`} />
             </Typography>
-            <p className="aboutme">
-              {aboutme}
-            </p>
-            <TextDecrypt text={`${english}`} />
+            <h4 className="aboutme">{aboutme}</h4>
+            <h2 style={{ marginTop: '20px', borderBottom: '3px solid orange', width: 'fit-content' }}>{english}</h2>
           </div>
         </div>
       </Container>

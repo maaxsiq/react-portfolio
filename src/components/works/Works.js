@@ -13,6 +13,16 @@ import Veritru from '../../assets/recentprojects/veritru.png';
 import Lofo from '../../assets/recentprojects/lofo.png';
 import Startup from '../../assets/recentprojects/startup.png';
 import Lacalle from '../../assets/recentprojects/lacalle.png';
+import SalesSense from '../../assets/recentprojects/salessense.png';
+import Power2Go from '../../assets/recentprojects/power2go.png';
+import Invillia from '../../assets/recentprojects/invillia.jpg';
+import BBlend from '../../assets/recentprojects/bblend.png';
+import Tazzi from '../../assets/recentprojects/tazzi.png';
+import Siglo from '../../assets/recentprojects/siglo.png';
+import Monkeys from '../../assets/recentprojects/monkeys.png';
+import B2ML from '../../assets/recentprojects/b2ml.png';
+import PDS from '../../assets/recentprojects/pdsolucoes.png';
+import Ventrix from '../../assets/recentprojects/ventrix.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -27,10 +37,36 @@ export const Works = () => {
   const [projects, setProjects] = useState([
     { 
       id: 1,
+      title: 'Sales Sense - Product Manager / Senior Front-end ', 
+      description: `Technical team management, repository management, scrum
+      master and agile methodologies organizer (JIRA, Miro, Git, AWS),
+      front-end development leader using (ReactJS, ReactNative,
+      TypeScript) and product manager, assisting in decisions and
+      improvements of the system.
+      `,
+      alter: 'SS Technologies',
+      image: `${SalesSense}`,
+    },
+    { 
+      id: 1,
+      title: 'Power 2 Go - Tech Lead / Senior Front-end', 
+      description: `Management of the development team and technical proposals,
+      leading the agile architecture ceremonies, support for front-end
+      development in ReactJS and ReactNative (TypeScript), function tests
+      and direct follow-up with the client.`,
+      alter: 'P2GO Technologies',
+      image: `${Power2Go}`,
+    },
+    { 
+      id: 1,
       title: 'Invillia - Mid Front-end Developer', 
-      description: `Frontend Developer TypeScript + ReactJS, using the technologies: GraphQL, Rollbar, Rest API, DataDog, Firebase, Twilio, GitHub Actions, CI/CD, TDD, Unit Tests, Design Pattern, CleanCode Archtechture, Styled Components, AWS systems..`,
+      description: `Management of the development team and technical proposals,
+      leading the agile architecture ceremonies, support for front-end
+      development in ReactJS and ReactNative (TypeScript), function tests
+      and direct follow-up with the client.
+      `,
       alter: 'Invillia Technologies',
-      image: `${Portfolio}`,
+      image: `${Invillia}`,
     },
     { 
       id: 2,
@@ -42,7 +78,7 @@ export const Works = () => {
       CleanCode Archtechture, Styled Components.
       `,
       alter: 'B.blend Technologies',
-      image: `${Veritru}`,
+      image: `${BBlend}`,
     },
     { 
       id: 3,
@@ -53,7 +89,7 @@ export const Works = () => {
       MongoDB and PostgreSQL.
       `,
       alter: 'Tazzi Technologies',
-      image: `${Lofo}`,
+      image: `${Tazzi}`,
     },
     { 
       id: 4,
@@ -65,7 +101,7 @@ export const Works = () => {
       servers, and managing task force.
       `,
       alter: 'Siglo Technologies',
-      image: `${Startup}`,
+      image: `${Siglo}`,
     },
     { 
       id: 5,
@@ -73,17 +109,15 @@ export const Works = () => {
       description: `Development and maintenance of Mobile application using React
       Native technology and PostgreSQL database for audio book
       application, including screens and AWS server (Amazon).
-      `,
-      image: `${Lacalle}`,
-    },
-    { 
-      id: 6,
-      title: 'Monkeys -  Full-stack Developer', 
-      description: `Development and maintenance of web and mobile application
+      Development and maintenance of web and mobile application
       (ReactJS and React Native) to control and visit properties, with
       PostGreSQL database, managed by realtors in São Paulo.
+      Company administrator Monkeys. Strength
+      management of task, technical team and application time by
+      functionality of each step projects, using Scrum as the main
+      method.
       `,
-      image: `${Lacalle}`,
+      image: `${Monkeys}`,
     },
     { 
       id: 7,
@@ -95,17 +129,7 @@ export const Works = () => {
       subdivisions from Petrobras in JavaScript for financial control of
       supplies and generation of electronic invoices.
       `,
-      image: `${Lacalle}`,
-    },
-    { 
-      id: 8,
-      title: 'Monkeys -  CEO', 
-      description: `Company administrator Monkeys. Strength
-      management of task, technical team and application time by
-      functionality of each step projects, using Scrum as the main
-      method.
-      `,
-      image: `${Lacalle}`,
+      image: `${B2ML}`,
     },
     { 
       id: 9,
@@ -116,7 +140,7 @@ export const Works = () => {
       devices and information, such as gates via sms and luminaires via
       Bluetooth.
       `,
-      image: `${Lacalle}`,
+      image: `${PDS}`,
     },
     { 
       id: 10,
@@ -127,7 +151,7 @@ export const Works = () => {
       stock control, shipping, implementation of new software (Microsiga
       – TOTVS), receiving and producing the devices.
       `,
-      image: `${Lacalle}`,
+      image: `${Ventrix}`,
     },
   ]);
 
@@ -143,9 +167,9 @@ export const Works = () => {
               <h3 className="title">
                 <TextDecrypt text={ project.title } />
               </h3>
-              <p className="description">
+              <h6 className="description">
                 { project.description }
-              </p>
+              </h6>
             </div>
           </div>
         ))}

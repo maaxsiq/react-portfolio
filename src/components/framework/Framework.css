@@ -1,11 +1,11 @@
-.about {
-  width: 80%;
+.framework {
   height: 100vh;
   margin-left: 7rem;
   margin-right: 7rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: -14rem;
 }
 .heading {
   width: 30%;
@@ -43,6 +43,13 @@
   ._content_wrapper {
     width: 40%;
   }
+  .img_wrapper {
+    width: 40%;
+  }
+  ._new_image {
+    width: 40%;
+    height: 40%;
+  }
 }
 @media (max-width: 768px) {
   .about {
@@ -56,5 +63,12 @@
   }
   ._content_wrapper {
     width: 15em;
+  }
+  .img_wrapper {
+    width: 15rem;
+  }
+  ._new_image {
+    width: 15rem;
+    height: 15rem;
   }
 }
